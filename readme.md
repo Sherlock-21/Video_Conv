@@ -18,6 +18,8 @@ Building the package:
        source ~/<your_ros2_ws>/install/setup.bash
 
        
+
+       
 How to use the launch file:
 
 -> Run the launch file in the video_conv package
@@ -29,17 +31,24 @@ How to use the launch file:
        ros2 launch video_conv video_conv_launch.py input_topic:=/camera/image_raw output_topic:=/converted_image
     
 (default input_topic:=/camera/image_raw output_topic:=/converted_image)
+
+
+
        
 How to call the service to change the mode:
 
-    -> Open a new terminal
+-> Open a new terminal
     
-    Switch to Grayscale Mode:
-       ros2 service call /toggle_mode std_srvs/srv/SetBool "{data: true}"
+Switch to Grayscale Mode:
+
+      ros2 service call /toggle_mode std_srvs/srv/SetBool "{data: true}"
        
-    Switch to Colour Mode:
+Switch to Colour Mode:
+
        ros2 service call /toggle_mode std_srvs/srv/SetBool "{data: false}"
        
+
+
        
 How to visualize the output topic:
 
