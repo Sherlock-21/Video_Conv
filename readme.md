@@ -4,9 +4,9 @@ Instructions:
 Building the package:
 
     -> Clone the repo into src/ of your workspace.
-    
-      ''' cd ~/<your_ros2_ws>/src
-       git clone https://github.com/Sherlock-21/Video_Conv.git'''
+      
+       cd ~/<your_ros2_ws>/src
+       git clone https://github.com/Sherlock-21/Video_Conv.git
        
     -> Build the package
     
